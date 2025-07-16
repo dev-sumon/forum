@@ -1,0 +1,42 @@
+.forum {
+    padding: 100px 0px;
+    background: #010842;
+}
+
+.forum .forum_list .forum_item {
+    padding: 5px 10px;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.forum .forum_list .forum_item .title a {
+    color: #f08027;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.forum .forum_list .forum_item .description p {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.forum .forum_list .forum_item .comment {
+    text-align: end;
+}
+
+.forum .forum_list .forum_item .comment a {
+    text-decoration: none;
+    color: #f08027;
+    font-size: 20px;
+}
+.forum .forum_list .forum_item .image{
+    margin-bottom: 20px;
+    text-align: center;
+}
