@@ -28,7 +28,7 @@
 
 .forum_card_section .card-list .card .card-item .title h2 a {
     text-decoration: none;
-    color: #f08027;
+    color: #2c347e;
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 600;
 }
@@ -55,7 +55,7 @@
 }
 
 .forum_section .fourm .forum_category .title {
-    color: #f08027;
+    color: #2c347e;
     font-weight: 600;
     font-family: "Hind Siliguri", sans-serif;
     border-bottom: 1px solid #fff;
@@ -84,7 +84,7 @@
 }
 
 .forum_section .forum_list .forum_item .title a {
-    color: #f08027;
+    color: #2c347e;
     text-decoration: none;
     font-size: 36px;
     font-weight: 600;
@@ -110,7 +110,7 @@
     font-size: 20px;
 }
 .forum_section .forum_list .forum_item .title h2 {
-    color: #f08027;
+    color: #2c347e;
 }
 
 .forum_section .forum_list .forum_item .image {
