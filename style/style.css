@@ -1,16 +1,88 @@
-.forum {
-    padding: 100px 0px;
-    background: #010842;
+.forum_card_section {
+    margin-top: 30px;
 }
 
-.forum .forum_list .forum_item {
-    padding: 5px 10px;
-    border-bottom: 2px solid #ffffff;
-    border-radius: 3px;
+.forum_card_section .forum_title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
-.forum .forum_list .forum_item .title a {
+.forum_card_section .card-list {
+    display: flex;
+    gap: 20px;
+}
+
+.forum_card_section .card-list .card .card-item .image {
+    text-align: center;
+}
+
+.forum_card_section .card-list .card .card-item .image img {
+    width: 100%;
+    height: 250px;
+}
+
+.forum_card_section .card-list .card .card-item .title {
+    padding: 10px;
+}
+
+.forum_card_section .card-list .card .card-item .title h2 a {
+    text-decoration: none;
+    color: #f08027;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.forum_card_section .card-list .card .card-item .description {
+    padding: 10px;
+    color: #2c347e;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.forum_section {
+    padding: 100px 0px;
+    /* background: #010842; */
+}
+
+.forum_section .fourm {
+    display: flex;
+    gap: 3%;
+}
+
+.forum_section .fourm .forum_category {
+    width: 35%;
+}
+
+.forum_section .fourm .forum_category .title {
+    color: #f08027;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid #fff;
+}
+
+.forum_section .fourm .forum_category .category_list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.forum_section .fourm .forum_category .category_list ul li {
+    margin-bottom: 10px;
+}
+
+.forum_section .fourm .forum_category .category_list ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.forum_section .forum_list .forum_item {
+    padding: 5px 10px;
+    border-bottom: 3px solid #2c3482;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.forum_section .forum_list .forum_item .title a {
     color: #f08027;
     text-decoration: none;
     font-size: 36px;
@@ -20,23 +92,24 @@
     margin-bottom: 5px;
 }
 
-.forum .forum_list .forum_item .description p {
-    color: #fff;
+.forum_section .forum_list .forum_item .description p {
+    color: #2c347e;
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
 }
 
-.forum .forum_list .forum_item .comment {
+.forum_section .forum_list .forum_item .comment {
     text-align: end;
 }
 
-.forum .forum_list .forum_item .comment a {
+.forum_section .forum_list .forum_item .comment a {
     text-decoration: none;
     color: #f08027;
     font-size: 20px;
 }
-.forum .forum_list .forum_item .image{
+
+.forum_section .forum_list .forum_item .image {
     margin-bottom: 20px;
     text-align: center;
 }
