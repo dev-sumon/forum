@@ -3,7 +3,7 @@
 }
 
 .forum_card_section .forum_title h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Siliguri", sans-serif;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -29,14 +29,14 @@
 .forum_card_section .card-list .card .card-item .title h2 a {
     text-decoration: none;
     color: #f08027;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Siliguri", sans-serif;
     font-weight: 600;
 }
 
 .forum_card_section .card-list .card .card-item .description {
     padding: 10px;
     color: #2c347e;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Siliguri", sans-serif;
     font-weight: 500;
 }
 
@@ -51,13 +51,13 @@
 }
 
 .forum_section .fourm .forum_category {
-    width: 40%;
+    width: 50%;
 }
 
 .forum_section .fourm .forum_category .title {
     color: #f08027;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Siliguri", sans-serif;
     border-bottom: 1px solid #fff;
 }
 
@@ -69,6 +69,7 @@
 
 .forum_section .fourm .forum_category .category_list ul li {
     margin-bottom: 10px;
+    font-family: "Hind Siliguri", sans-serif;
 }
 
 .forum_section .fourm .forum_category .category_list ul li:last-child {
@@ -87,14 +88,14 @@
     text-decoration: none;
     font-size: 36px;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Siliguri", sans-serif;
     line-height: 30px;
     margin-bottom: 5px;
 }
 
 .forum_section .forum_list .forum_item .description p {
     color: #2c347e;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Hind Siliguri", sans-serif;
     font-weight: 500;
     margin: 0;
 }
@@ -108,12 +109,23 @@
     color: #f08027;
     font-size: 20px;
 }
+.forum_section .forum_list .forum_item .title h2 {
+    color: #f08027;
+}
 
 .forum_section .forum_list .forum_item .image {
     margin-bottom: 20px;
     text-align: center;
 }
-
+.comment_list h3{
+    font-family: "Hind Siliguri", sans-serif;
+}
+.comment_list .comment_item .comment_details p{
+    font-family: "Hind Siliguri", sans-serif;
+}
+.comment_list .comment_item .reply a{
+    font-family: "Hind Siliguri", sans-serif;
+}
 @media(max-width:768px) {
     .forum_section .fourm {
         display: block;
