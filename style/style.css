@@ -119,9 +119,9 @@
         display: block;
     }
 
-    .forum_section .fourm .forum_category .category_list ul {
+    /* .forum_section .fourm .forum_category .category_list ul {
         display: none;
-    }
+    } */
 
     .forum_section .fourm .forum_category {
         width: 100%;

@@ -139,8 +139,8 @@
             <div class="fourm">
                 <div class="forum_category">
                     <div class="card p-3">
-                        <div class="title">
-                            <h2>Category</h2>
+                        <div class="title" id="categoryToggle">
+                            <h2>Category <i class="fa-solid fa-angle-down"></i></h2>
                         </div>
                         <div class="category_list">
                             <ul>
@@ -274,27 +274,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
