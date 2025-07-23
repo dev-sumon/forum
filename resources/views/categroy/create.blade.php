@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+    <title>Categroy</title>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="float-left card-title">
+                            <h4>{{ __('Create new Category') }}</h4>
+                        </span>
+                        <span class="float-right">
+                            <a href="" class="btn btn-info">{{ __('Back') }}</a>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-10 m-auto">
+                                <form action="{{ route('categroy.store') }}" method="POST"
+                                    enctype="multipart/form-data">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="title">{{ __('Title') }} <span
+                                                class="text-danger">*</span></label>
+                                        <input type="title" class="form-control" id="title"
+                                            placeholder="Enter Post Title" name="title" value="{{ old('title') }}">
+                                        @if ($errors->has('title'))
+                                            <div class="text-danger">{{ $errors->first('title') }}</div>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="mb-3">
+                                            <label for="slug" class="form-label">{{ __('Slug') }}</label>
+                                            <input type="text" name="slug" class="form-control" id="slug"
+                                                value="{{ old('slug') }}">
+                                            @error('slug')
+                                                <small class="text-danger">{{ $message }}</small>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success w-100 submitBtn">
+                                            {{ __('Submit') }}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#title').on('input', function() {
+                slugGenerate($(this));
+            });
+        });
+
+        function slugGenerate(title) {
+            let inputTitle = title.val();
+            let slug = inputTitle
+                .toLowerCase()
+                .replace(/[^\w ]+/g, '')
+                .replace(/ +/g, '-');
+            $('#slug').val(slug);
+        }
+    </script>
+
+
+</body>
+
+</html>
